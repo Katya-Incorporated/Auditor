@@ -285,6 +285,7 @@ class AttestationProtocol {
             "Pixel Fold",
             "Pixel 8",
             "Pixel 8 Pro",
+            "Pixel 8a",
             "SM-N970U",
             "SM-N975U").contains(Build.MODEL);
 
@@ -305,51 +306,53 @@ class AttestationProtocol {
 
     private static final ImmutableMap<String, DeviceInfo> fingerprintsCustomOS = ImmutableMap
             .<String, DeviceInfo>builder()
-            // GrapheneOS
+            // KatyaOS
             .put("B094E48B27C6E15661223CEFF539CF35E481DEB4E3250331E973AC2C15CAD6CD",
-                    new DeviceInfo(R.string.device_pixel_2, 2, 3, true, false, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_2, 2, 3, true, false, R.string.os_Katya))
             .put("B6851E9B9C0EBB7185420BD0E79D20A84CB15AB0B018505EFFAA4A72B9D9DAC7",
-                    new DeviceInfo(R.string.device_pixel_2_xl, 2, 3, true, false, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_2_xl, 2, 3, true, false, R.string.os_Katya))
             .put("0F9A9CC8ADE73064A54A35C5509E77994E3AA37B6FB889DD53AF82C3C570C5CF",
-                    new DeviceInfo(R.string.device_pixel_3, 3, 4, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_3, 3, 4, false, true, R.string.os_Katya))
             .put("06DD526EE9B1CB92AA19D9835B68B4FF1A48A3AD31D813F27C9A7D6C271E9451",
-                    new DeviceInfo(R.string.device_pixel_3_xl, 3, 4, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_3_xl, 3, 4, false, true, R.string.os_Katya))
             .put("8FF8B9B4F831114963669E04EA4F849F33F3744686A0B33B833682746645ABC8",
-                    new DeviceInfo(R.string.device_pixel_3a, 3, 4, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_3a, 3, 4, false, true, R.string.os_Katya))
             .put("91943FAA75DCB6392AE87DA18CA57D072BFFB80BC30F8FAFC7FFE13D76C5736E",
-                    new DeviceInfo(R.string.device_pixel_3a_xl, 3, 4, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_3a_xl, 3, 4, false, true, R.string.os_Katya))
             .put("80EF268700EE42686F779A47B4A155FE1FFC2EEDF836B4803CAAB8FA61439746",
-                    new DeviceInfo(R.string.device_pixel_4, 3, 4, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_4, 3, 4, false, true, R.string.os_Katya))
             .put("3F15FDCB82847FED97427CE00563B8F9FF34627070DE5FDB17ACA7849AB98CC8",
-                    new DeviceInfo(R.string.device_pixel_4_xl, 3, 4, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_4_xl, 3, 4, false, true, R.string.os_Katya))
             .put("9F2454A1657B1B5AD7F2336B39A2611F7A40B2E0DDFD0D6553A359605928DF29",
-                    new DeviceInfo(R.string.device_pixel_4a, 3, 4, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_4a, 3, 4, false, true, R.string.os_Katya))
             .put("DCEC2D053D3EC4F1C9BE414AA07E4D7D7CBD12040AD2F8831C994A83A0536866",
-                    new DeviceInfo(R.string.device_pixel_4a_5g, 3, 4, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_4a_5g, 3, 4, false, true, R.string.os_Katya))
             .put("36A99EAB7907E4FB12A70E3C41C456BCBE46C13413FBFE2436ADEE2B2B61120F",
-                    new DeviceInfo(R.string.device_pixel_5, 3, 4, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_5, 3, 4, false, true, R.string.os_Katya))
             .put("0ABDDEDA03B6CE10548C95E0BEA196FAA539866F929BCDF7ECA84B4203952514",
-                    new DeviceInfo(R.string.device_pixel_5a, 3, 4, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_5a, 3, 4, false, true, R.string.os_Katya))
             .put("F0A890375D1405E62EBFD87E8D3F475F948EF031BBF9DDD516D5F600A23677E8",
-                    new DeviceInfo(R.string.device_pixel_6, 100, 100, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_6, 100, 100, false, true, R.string.os_Katya))
             .put("439B76524D94C40652CE1BF0D8243773C634D2F99BA3160D8D02AA5E29FF925C",
-                    new DeviceInfo(R.string.device_pixel_6_pro, 100, 100, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_6_pro, 100, 100, false, true, R.string.os_Katya))
             .put("08C860350A9600692D10C8512F7B8E80707757468E8FBFEEA2A870C0A83D6031",
-                    new DeviceInfo(R.string.device_pixel_6a, 100, 100, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_6a, 100, 100, false, true, R.string.os_Katya))
             .put("3EFE5392BE3AC38AFB894D13DE639E521675E62571A8A9B3EF9FC8C44FD17FA1",
-                    new DeviceInfo(R.string.device_pixel_7, 200, 200, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_7, 200, 200, false, true, R.string.os_Katya))
             .put("BC1C0DD95664604382BB888412026422742EB333071EA0B2D19036217D49182F",
-                    new DeviceInfo(R.string.device_pixel_7_pro, 200, 200, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_7_pro, 200, 200, false, true, R.string.os_Katya))
             .put("508D75DEA10C5CBC3E7632260FC0B59F6055A8A49DD84E693B6D8899EDBB01E4",
-                    new DeviceInfo(R.string.device_pixel_7a, 200, 200, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_7a, 200, 200, false, true, R.string.os_Katya))
             .put("94DF136E6C6AA08DC26580AF46F36419B5F9BAF46039DB076F5295B91AAFF230",
-                    new DeviceInfo(R.string.device_pixel_tablet, 200, 200, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_tablet, 200, 200, false, true, R.string.os_Katya))
             .put("EE0C9DFEF6F55A878538B0DBF7E78E3BC3F1A13C8C44839B095FE26DD5FE2842",
-                    new DeviceInfo(R.string.device_pixel_fold, 200, 200, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_fold, 200, 200, false, true, R.string.os_Katya))
             .put("CD7479653AA88208F9F03034810EF9B7B0AF8A9D41E2000E458AC403A2ACB233",
-                    new DeviceInfo(R.string.device_pixel_8, 300, 300, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_8, 300, 300, false, true, R.string.os_Katya))
             .put("896DB2D09D84E1D6BB747002B8A114950B946E5825772A9D48BA7EB01D118C1C",
-                    new DeviceInfo(R.string.device_pixel_8_pro, 300, 300, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_8_pro, 300, 300, false, true, R.string.os_Katya))
+            .put("096B8BD6D44527A24AC1564B308839F67E78202185CBFF9CFDCB10E63250BC5E",
+                    new DeviceInfo(R.string.device_pixel_8a, 300, 300, false, true, R.string.os_Katya))
             .build();
     private static final ImmutableMap<String, DeviceInfo> fingerprintsStock = ImmutableMap
             .<String, DeviceInfo>builder()
@@ -405,6 +408,8 @@ class AttestationProtocol {
                     new DeviceInfo(R.string.device_pixel_8, 300, 300, false, true, R.string.os_stock))
             .put("E5362DDF4676E8AA134DB520749BCB1F44FE6556F5E7BFAB130CB6343476FC15",
                     new DeviceInfo(R.string.device_pixel_8_pro, 300, 300, false, true, R.string.os_stock))
+            .put("9DE25FB02BB5530D44149D148437C82E267E557322530AA6F03B0AC2E92931DA",
+                    new DeviceInfo(R.string.device_pixel_8a, 300, 300, false, true, R.string.os_stock))
             .put("72376CAACF11726D4922585732429FB97D0D1DD69F0D2E0770B9E61D14ADDE65",
                     new DeviceInfo(R.string.device_sm_a705fn, 3, 4, false, false, R.string.os_stock))
             .put("33D9484FD512E610BCF00C502827F3D55A415088F276C6506657215E622FA770",
@@ -497,47 +502,49 @@ class AttestationProtocol {
 
     private static final ImmutableMap<String, DeviceInfo> fingerprintsStrongBoxCustomOS = ImmutableMap
             .<String, DeviceInfo>builder()
-            // GrapheneOS
+            // KatyaOS
             .put("0F9A9CC8ADE73064A54A35C5509E77994E3AA37B6FB889DD53AF82C3C570C5CF",
-                    new DeviceInfo(R.string.device_pixel_3, 3, 4, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_3, 3, 4, false, true, R.string.os_Katya))
             .put("06DD526EE9B1CB92AA19D9835B68B4FF1A48A3AD31D813F27C9A7D6C271E9451",
-                    new DeviceInfo(R.string.device_pixel_3_xl, 3, 4, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_3_xl, 3, 4, false, true, R.string.os_Katya))
             .put("73D6C63A07610404FE16A4E07DD24E41A70D331E9D3EF7BBA2D087E4761EB63A",
-                    new DeviceInfo(R.string.device_pixel_3a, 3, 4, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_3a, 3, 4, false, true, R.string.os_Katya))
             .put("3F36E3482E1FF82986576552CB4FD08AF09F8B09D3832314341E04C42D2919A4",
-                    new DeviceInfo(R.string.device_pixel_3a_xl, 3, 4, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_3a_xl, 3, 4, false, true, R.string.os_Katya))
             .put("80EF268700EE42686F779A47B4A155FE1FFC2EEDF836B4803CAAB8FA61439746",
-                    new DeviceInfo(R.string.device_pixel_4, 3, 4, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_4, 3, 4, false, true, R.string.os_Katya))
             .put("3F15FDCB82847FED97427CE00563B8F9FF34627070DE5FDB17ACA7849AB98CC8",
-                    new DeviceInfo(R.string.device_pixel_4_xl, 3, 4, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_4_xl, 3, 4, false, true, R.string.os_Katya))
             .put("9F2454A1657B1B5AD7F2336B39A2611F7A40B2E0DDFD0D6553A359605928DF29",
-                    new DeviceInfo(R.string.device_pixel_4a, 3, 4, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_4a, 3, 4, false, true, R.string.os_Katya))
             .put("DCEC2D053D3EC4F1C9BE414AA07E4D7D7CBD12040AD2F8831C994A83A0536866",
-                    new DeviceInfo(R.string.device_pixel_4a_5g, 4, 41, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_4a_5g, 4, 41, false, true, R.string.os_Katya))
             .put("36A99EAB7907E4FB12A70E3C41C456BCBE46C13413FBFE2436ADEE2B2B61120F",
-                    new DeviceInfo(R.string.device_pixel_5, 4, 41, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_5, 4, 41, false, true, R.string.os_Katya))
             .put("0ABDDEDA03B6CE10548C95E0BEA196FAA539866F929BCDF7ECA84B4203952514",
-                    new DeviceInfo(R.string.device_pixel_5a, 4, 41, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_5a, 4, 41, false, true, R.string.os_Katya))
             .put("F0A890375D1405E62EBFD87E8D3F475F948EF031BBF9DDD516D5F600A23677E8",
-                    new DeviceInfo(R.string.device_pixel_6, 100, 100, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_6, 100, 100, false, true, R.string.os_Katya))
             .put("439B76524D94C40652CE1BF0D8243773C634D2F99BA3160D8D02AA5E29FF925C",
-                    new DeviceInfo(R.string.device_pixel_6_pro, 100, 100, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_6_pro, 100, 100, false, true, R.string.os_Katya))
             .put("08C860350A9600692D10C8512F7B8E80707757468E8FBFEEA2A870C0A83D6031",
-                    new DeviceInfo(R.string.device_pixel_6a, 100, 100, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_6a, 100, 100, false, true, R.string.os_Katya))
             .put("3EFE5392BE3AC38AFB894D13DE639E521675E62571A8A9B3EF9FC8C44FD17FA1",
-                    new DeviceInfo(R.string.device_pixel_7, 100, 100, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_7, 100, 100, false, true, R.string.os_Katya))
             .put("BC1C0DD95664604382BB888412026422742EB333071EA0B2D19036217D49182F",
-                    new DeviceInfo(R.string.device_pixel_7_pro, 100, 100, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_7_pro, 100, 100, false, true, R.string.os_Katya))
             .put("508D75DEA10C5CBC3E7632260FC0B59F6055A8A49DD84E693B6D8899EDBB01E4",
-                    new DeviceInfo(R.string.device_pixel_7a, 100, 100, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_7a, 100, 100, false, true, R.string.os_Katya))
             .put("94DF136E6C6AA08DC26580AF46F36419B5F9BAF46039DB076F5295B91AAFF230",
-                    new DeviceInfo(R.string.device_pixel_tablet, 100, 100, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_tablet, 100, 100, false, true, R.string.os_Katya))
             .put("EE0C9DFEF6F55A878538B0DBF7E78E3BC3F1A13C8C44839B095FE26DD5FE2842",
-                    new DeviceInfo(R.string.device_pixel_fold, 100, 100, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_fold, 100, 100, false, true, R.string.os_Katya))
             .put("CD7479653AA88208F9F03034810EF9B7B0AF8A9D41E2000E458AC403A2ACB233",
-                    new DeviceInfo(R.string.device_pixel_8, 300, 300, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_8, 300, 300, false, true, R.string.os_Katya))
             .put("896DB2D09D84E1D6BB747002B8A114950B946E5825772A9D48BA7EB01D118C1C",
-                    new DeviceInfo(R.string.device_pixel_8_pro, 300, 300, false, true, R.string.os_graphene))
+                    new DeviceInfo(R.string.device_pixel_8_pro, 300, 300, false, true, R.string.os_Katya))
+            .put("096B8BD6D44527A24AC1564B308839F67E78202185CBFF9CFDCB10E63250BC5E",
+                    new DeviceInfo(R.string.device_pixel_8a, 300, 300, false, true, R.string.os_Katya))
             .build();
     private static final ImmutableMap<String, DeviceInfo> fingerprintsStrongBoxStock = ImmutableMap
             .<String, DeviceInfo>builder()
@@ -573,6 +580,8 @@ class AttestationProtocol {
                     new DeviceInfo(R.string.device_pixel_8, 300, 300, false, true, R.string.os_stock))
             .put("E5362DDF4676E8AA134DB520749BCB1F44FE6556F5E7BFAB130CB6343476FC15",
                     new DeviceInfo(R.string.device_pixel_8_pro, 300, 300, false, true, R.string.os_stock))
+            .put("9DE25FB02BB5530D44149D148437C82E267E557322530AA6F03B0AC2E92931DA",
+                    new DeviceInfo(R.string.device_pixel_8a, 300, 300, false, true, R.string.os_stock))
             .put("3D3DEB132A89551D0A700D230BABAE4E3E80E3C7926ACDD7BAEDF9B57AD316D0",
                     new DeviceInfo(R.string.device_sm_n970u, 3, 4, false, true, R.string.os_stock))
             .put("9AC63842137D92C119A1B1BE2C9270B9EBB6083BBE6350B7823571942B5869F0",
@@ -601,26 +610,6 @@ class AttestationProtocol {
     }
 
     static byte[] getChallengeMessage(final Context context) {
-        String[] sampleCertificates = {
-        };
-
-        try {
-            Certificate[] certificates = new Certificate[sampleCertificates.length];
-
-            for (int i = 0; i < sampleCertificates.length; i++) {
-                byte[] der = BaseEncoding.base64().decode(sampleCertificates[i]);
-                certificates[i] = generateCertificate(new ByteArrayInputStream(der));
-            }
-            try (final InputStream stream = context.getResources().openRawResource(R.raw.google_root)) {
-                Verified verified = verifyStateless(certificates, "sample".getBytes(),
-                        generateCertificate(context.getResources(), R.raw.google_root),
-                        generateCertificate(context.getResources(), R.raw.google_root_2));
-                Log.d(TAG, "device: " + context.getString(verified.device) + ", osVersion: " + verified.osVersion + ", osPatchLevel: " + verified.osPatchLevel);
-            }
-        } catch (GeneralSecurityException | IOException e) {
-            Log.e(TAG, "broken", e);
-        }
-
         return Bytes.concat(new byte[]{PROTOCOL_VERSION}, getChallengeIndex(context), getChallenge());
     }
 

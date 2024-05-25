@@ -18,7 +18,6 @@ class Utils {
         return t == null ? Stream.empty() : Stream.of(t);
     }
 
-    // https://github.com/GrapheneOS/Auditor/blob/40ee574f71786a6a97498f925615797e9e86ac4a/app/src/main/java/app/attestation/auditor/attestation/Asn1Utils.java#L166
     static int intValueFromBigInteger(BigInteger bigInt, boolean strict) {
         if (bigInt.compareTo(BigInteger.valueOf(Integer.MAX_VALUE)) > 0
                 || bigInt.compareTo(strict ? BigInteger.ZERO : BigInteger.valueOf(Integer.MIN_VALUE)) < 0) {
