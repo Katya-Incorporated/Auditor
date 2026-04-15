@@ -105,7 +105,7 @@ dependencies {
     implementation("com.google.android.material:material:1.13.0")
     // Guava's JRE variant is detected as a newer version
     // noinspection GradleDependency
-    implementation("com.google.guava:guava:33.5.0-android")
+    implementation("com.google.guava:guava:33.6.0-android")
     implementation("com.google.zxing:core:3.5.4")
     implementation("org.bouncycastle:bcprov-jdk18on:1.83")
 
